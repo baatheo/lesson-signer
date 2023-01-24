@@ -1,0 +1,19 @@
+server:
+  servlet:
+    context-path: /api
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://ec2-54-216-155-253.eu-west-1.compute.amazonaws.com:5432/defpjgvuu8hcuf
+    username: vpxzmizstxfutq
+    password: 70560ae95adf2d10341b3d27ad7c22860941affa30b045081278971b4ca750d7
+  jackson:
+    serialization:
+      FAIL_ON_EMPTY_BEANS: false
+  flyway:
+    user: vpxzmizstxfutq
+    password: 70560ae95adf2d10341b3d27ad7c22860941affa30b045081278971b4ca750d7
+    enabled: true
+    group: true
+    baseline-on-migrate: true
